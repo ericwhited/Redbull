@@ -33,29 +33,79 @@ h1 {
 nav {
 	text-align: center;
 	background-color: rgba(0, 0, 0, .9);
-	margin: -5px auto 0;
-	padding: 20px;
+	margin: 0 auto;
+	height: 100px;
 }
 
 nav li {
 	color: #f2da07;
-	display: inline;
+	display: inline-block;
 	font-size: 40px;
-	margin: 0 50px 0;
+	margin: 0 20px 0;
+	padding: 27px 50px;
+	background: none;
+	border: none;
 }
 
 nav a {
 	text-decoration: none;
 }
 
+#yellowSearchIcon {
+	height: 33px;
+	width: 33px;
+	border: none;
+	background: none;
+	background-image: url('searchIcon.png');
+	background-size: 33px 33px;
+	background-repeat: no-repeat;
+}
+
+nav ul {
+	margin: 0 auto;
+}
+
+/*Search Bar Area*/
+#searchBar {
+	background-color: #f3c307;
+	text-align: center;
+	box-shadow: 0 0 15px;
+	display: none;
+}
+
+#searchBar input {
+	border-radius: 20px;
+	height: 25px;
+	width: 500px;
+	margin: 15px 0 15px;
+	text-align: center;
+	font-size: 25px;
+}
+
+#blackSearchIcon {
+	height: 35px;
+	width: 35px;
+	background: none;
+	background-image: url('blackSearchIcon.png');
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	background-position: 3px 3px;
+	padding-bottom: 10px;
+	margin-left: 15px;
+	border: none;
+}
+
+
 main {
 	background-color: rgba(255, 255, 255, .2);
 }
 
+
+
 /*PRODUCT*/
-#container {
-	/*width: 900px;*/
+#container, #mensContainer, #womensContainer {
 	text-align: center;
+	margin-top: 10px;
 }
 
 .product {
@@ -65,7 +115,7 @@ main {
 	text-align: center;
 }
 
-#container img {
+#container img, #mensContainer img, #womensContainer img {
 	height: 600px;
 	width: 600px;
 	margin: 0 auto;
@@ -84,7 +134,7 @@ main {
 		padding-top: 100px;
 	}
 
-	#container img {
+	#container img, #mensContainer img, #womensContainer img {
 		width: 300px;
 		height: 300px;
 		margin-top: 60px;
